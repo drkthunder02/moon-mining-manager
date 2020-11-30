@@ -1,0 +1,32 @@
+{
+    "name": "matthewpennell/eveonline-socialite-sisi",
+    "description": "EveOnline SSO (Singularity) Provider for Laravel Socialite",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew Pennell",
+            "email": "github@matthewpennell.com"
+        },
+        {
+            "name": "Andre Peiffer",
+            "email": "necrotex@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "laravel/socialite": "3.*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "matthewpennell\\Socialite\\EveOnline\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "matthewpennell\\Socialite\\EveOnline\\Providers\\EveOnlineServiceProvider"
+            ]
+        }
+    }
+}
